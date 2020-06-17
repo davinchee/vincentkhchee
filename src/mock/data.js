@@ -2,9 +2,9 @@ import uuidv1 from 'uuid/v1';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'vincent chee | dev',
+  lang: 'en, fr, cn',
+  description: 'the portfolio',
 };
 
 // HERO DATA
@@ -18,40 +18,40 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://drive.google.com/file/d/1y94jxQE1ExAbBj-4dssYi_kGmoNAVDgg/view?usp=sharing', // if no resume, the button will not show up
+  paragraphOne: 'i love enjoying life, trying and learning new things. i am a dev with full-stack skills and three years of experience at a high-paced start-up and a boutique consultancy company.',
+  paragraphTwo: 'i strive to eliminate efficiency problems, both trivial and complex through the use of technology and from a ground up, first-principles approach, whenever suitable. this approach allows for exponential results rather than linear ones.',
+  paragraphThree: 'my other interests: food and travel, cooking, basketball, blockchain, finance, geopolitics and history, reading, music',
+  resume: 'https://drive.google.com/file/d/1y94jxQE1ExAbBj-4dssYi_kGmoNAVDgg/view?usp=sharing',
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'meid-eprac-screenshot.png',
+    title: 'meid eprac',
+    info: 'a simple browser extension which aims to help the user use their time in the best way they can through reminder of death.',
+    info2: 'it also includes a habit tracker and a little weather widget.',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '',
   },
   {
     id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'work-in-progress.jpg',
+    title: 'sellit (wip)',
+    info: 'i was unable to get a h1b working visa to continue remaining in the US so i need to sell my large possessions so i can recoup some of the costs.',
+    info2: 'my apartment uses buildinglink and the UX is not the greatest, so the goal here is to create this so i can sell my stuff.',
+    url: 'https://www.github.com/davinchee',
+    repo: '',
   },
   {
     id: uuidv1(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'work-in-progress.jpg',
+    title: 'network-donations (wip)',
+    info: 'the inspiration for this idea came to me during the protests that spread throughout america in june after the killing of George Floyd.',
+    info2: 'the idea is you will be able to make a donation which will generate a link which can be shared on social media and the ultimate goal is to increase the amount of donations by showing them the power of networks by showing how much money people have donated in their network.',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '',
   },
 ];
 
@@ -85,6 +85,17 @@ export const footerData = {
       name: 'github',
       url: 'https://github.com/davinchee',
     },
+    {
+      id: uuidv1(),
+      name: 'coffee',
+      url: 'https://www.buymeacoffee.com/davinchee',
+    },
+    {
+      id: uuidv1(),
+      name: 'medium',
+      url: 'https://medium.com/@dahvinchee',
+    },
+    
   ],
 };
 
