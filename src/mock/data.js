@@ -49,7 +49,7 @@ export const projectsData = [
     img: 'work-in-progress.jpg',
     title: 'network-donations (wip)',
     info: 'the inspiration for this idea came to me during the protests that spread throughout america in june after the killing of George Floyd.',
-    info2: 'the idea is you will be able to make a donation which will generate a link which can be shared on social media and the ultimate goal is to increase the amount of donations by showing them the power of networks by showing how much money people have donated in their network.',
+    info2: 'the idea is you will be able to make a donation which will generate a link which can be shared on social media and the ultimate goal is to increase the amount of donations by illustrating the power of networks through showing how much money your particular network has donated due to your link (and donation) or prior links.',
     url: '',
     repo: '',
   },
@@ -95,7 +95,6 @@ export const footerData = {
       name: 'medium',
       url: 'https://medium.com/@dahvinchee',
     },
-    
   ],
 };
 
