@@ -1,3 +1,9 @@
+.b-app-container {
+  transition: all 0.15s ease-in-out;
+  .m-hide {
+    opacity: 0;
+  }
+}
 #hero {
   min-height: 100vh;
   height: 100vh;
