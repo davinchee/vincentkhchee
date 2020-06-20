@@ -13,14 +13,16 @@ export const projects = [
     info2: 'it also includes a habit tracker and a little weather widget.',
     url: '',
     repo: '',
+    urls: [{ text: 'Download for Chrome', url: 'https://chrome.google.com/webstore/detail/meid-eprac/fniebmaepndngldhgcjgaoelbplghfnf' }, { text: 'Download for Firefox', url: 'https://addons.mozilla.org/en-US/firefox/addon/meid-eprac/' }]
   },
   {
     img: 'work-in-progress.jpg',
     title: 'sellit (wip)',
     info: 'i was unable to get a h1b working visa to continue remaining in the US so i need to sell my large possessions so i can recoup some of the costs.',
     info2: 'my apartment uses buildinglink and the UX is not the greatest, so the goal here is to create this so i can sell my stuff.',
-    url: 'https://www.github.com/davinchee',
+    url: '',
     repo: '',
+    urls: [],
   },
   {
     img: 'work-in-progress.jpg',
@@ -29,6 +31,7 @@ export const projects = [
     info2: 'the idea is you will be able to make a donation which will generate a link which can be shared on social media and the ultimate goal is to increase the amount of donations by illustrating the power of networks through showing how much money your particular network has donated due to your link (and donation) or prior links.',
     url: '',
     repo: '',
+    urls: [],
   },
 ];
 
@@ -53,7 +56,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map(x => {
-            const { title, info, info2, url, repo, img } = x;
+            const { title, info, info2, url, repo, img, urls } = x;
 
             return (
               <Row key={x.title}>
@@ -74,14 +77,18 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                      {url !== '' && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero"
+                          href={url || '#!'}
+                        >
+                          See Live
+                        </a>)}
+                        <div className='e-project-links'>
+                        {urls.map(y => <a target="_blank" rel="noopener noreferrer" href={y.url}>{y.text}</a>)}
+                        </div>
 
                       {repo && (
                         <a
